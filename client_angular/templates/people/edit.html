@@ -1,0 +1,35 @@
+<div class="panel panel-default">
+	<div class="panel-body">
+		<form name="clientForm" role="form">
+			<div class="form-group"
+				ng-class="{error: clientForm.name.$invalid && !clientForm.name.$pristine}">
+				<label>Name</label>
+				<input type="text" name="name" class="form-control"
+					ng-model="editClient.client.name" required>
+				<span ng-show="clientForm.name.$error.required && !clientForm.name.$pristine"
+					class="help-inline"> Required</span>
+			</div>
+			<div class="form-group"
+				ng-class="{error: clientForm.surname.$invalid && !clientForm.surname.$pristine}">
+				<label>Surname</label>
+				<input type="text" name="surname" class="form-control"
+					ng-model="editClient.client.surname" required>
+				<span ng-show="clientForm.surname.$error.required && !clientForm.surname.$pristine"
+					class="help-inline"> Required</span>
+			</div>
+			<div class="form-group"
+				ng-class="{error: clientForm.city.$invalid && !clientForm.city.$pristine}">
+				<label>City</label>
+				<input type="text" name="city" class="form-control"
+					ng-model="editClient.client.city" required>
+				<span ng-show="clientForm.city.$error.required && !clientForm.city.$pristine"
+					class="help-inline"> Required</span>
+			</div>
+
+
+			<br> <a href="#!/people" class="btn">Cancel</a>
+			<button ng-click="editClient.save()" ng-disabled="clientForm.$invalid"
+				class="btn btn-primary">Save</button>
+		</form>
+	</div>
+</div>

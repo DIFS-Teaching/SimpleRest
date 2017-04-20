@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="author" content="Radek Burget <burgetr@fit.vutbr.cz>">
+	<title>Simple REST Demo</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">  
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>  
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<header class="jumbotron">
+	<div class="container">
+		<h1>Simple REST Demo</h1>
+	</div>
+</header>
+
+<div class="container">
+
+	<h2>REST Server</h2>
+	<p>An extremely simple server implemented in the <code>server.php</code> script. Data is stored in <a href="data.csv"><code>data.csv</code></a>.</p>
+	<p>Try:</p>
+	<ul>
+	<li>GET <a href="server.php/data/">http://localhost/server.php/data</a> for listing all data.</li>
+	<li>GET <a href="server.php/data/1">http://localhost/server.php/data/1</a> for listing a single record.</li>
+	</ul>
+
+	<h2>jQuery Client</h2>
+	<p>A simple client written in jQuery.</p>
+	<p>Try: <a href="client_jquery/client.html">client_jquery/client.html</a></p>
+	
+	<h2>Angular.js Client</h2>
+	<p>A simple client written in Angular.js.</p>
+	<p>Try: <a href="client_angular/index.html">client_angular/index.html</a></p>
+	
+	<hr>
+
+	<footer>
+		<p>&copy; 2017
+			<a href="http://www.fit.vutbr.cz/~burgetr">Radek Burget</a>, 
+			<a href="http://www.fit.vutbr.cz/">Faculty of Information Technology</a>, 
+			<a href="http://www.vutbr.cz/">Brno University of Technology</a> 
+		</p>
+	</footer>
+</div>
+
+
+
+</body>
+</html>

@@ -1,0 +1,27 @@
+<h2>People</h2>
+
+<div class="panel panel-default">
+<div class="panel-heading">
+	<input type="text" ng-model="clientList.search" class="search-query form-control"
+		id="projects_search" placeholder="Search">
+</div>
+<div class="panel-body">
+<p><a href="#!/people/new"><i class="glyphicon glyphicon-plus-sign"></i> New client</a></p>
+<table class="table table-stripped table-bordered">
+	<thead>
+		<tr>
+			<th>id</th><th>Name</th><th>Surname</th><th>City</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr
+			ng-repeat="client in clientList.people | filter:clientList.search | orderBy:'id'">
+			<td><a ng-href="#!/people/detail/{{client.id}}">{{client.id}}</a></td>
+			<td>{{client.name}}</td>
+			<td>{{client.surname}}</td>
+			<td>{{client.city}}</td>
+		</tr>
+	</tbody>
+</table>
+</div>
+</div>

@@ -1,0 +1,27 @@
+Simple REST Demo
+================
+
+A simple REST server and examples of different clients.
+
+Installation
+------------
+Clone the repository and run
+```
+php -S localhost:8088
+```
+in the repository root.
+
+Then, visit `http://localhost:8088` with your browser. 
+
+
+Contents
+--------
+
+### REST Server
+An extremely simple server implemented in the `server.php` script. Data is stored in `data.csv`.
+
+### jQuery Client
+A simple client written in jQuery.
+
+### Angular.js Client
+A simple client written in Angular.js.
