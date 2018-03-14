@@ -24,4 +24,7 @@ An extremely simple server implemented in the `server.php` script. Data is store
 A simple client written in jQuery.
 
 ### Angular.js Client
-A simple client written in Angular.js.
+A simple client written in [Angular.js](https://angularjs.org/)
+
+### Angular Client
+A simple client writtent in [Angular](https://angular.io/)
