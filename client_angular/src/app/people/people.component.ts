@@ -1,3 +1,5 @@
+import { PersonService } from '../person.service';
+import { Person } from './person';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -7,9 +9,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PeopleComponent implements OnInit {
 
-  constructor() { }
+  people: Person[];
+
+  constructor(private personService: PersonService) { }
 
   ngOnInit() {
+    this.getPeople();
+  }
+
+  getPeople(): void {
+    this.personService.getPeople().subscribe(people => this.people = people);
   }
 
 }
