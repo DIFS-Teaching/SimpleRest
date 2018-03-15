@@ -2,8 +2,8 @@
 
 <div class="panel panel-default">
 <div class="panel-heading">
-	<!-- <input type="text" ng-model="clientList.search" class="search-query form-control"
-		id="projects_search" placeholder="Search">  -->
+	<input type="text" [(ngModel)]="filter" (keyup)="filterChanged()" class="search-query form-control"
+		id="projects_search" placeholder="Search">
 </div>
 <div class="panel-body">
 <p><a href="#"><i class="glyphicon glyphicon-plus-sign"></i> New client</a></p>

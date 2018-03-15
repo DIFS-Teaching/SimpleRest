@@ -8,6 +8,7 @@ import { PersonService } from './person.service';
 import { HttpClientModule } from '@angular/common/http';
 import { PersonDetailComponent } from './person-detail/person-detail.component';
 import { AppRoutingModule } from './/app-routing.module';
+import { FormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -18,6 +19,7 @@ import { AppRoutingModule } from './/app-routing.module';
   ],
   imports: [
     BrowserModule,
+    FormsModule,
     HttpClientModule,
     AppRoutingModule
   ],
