@@ -1,0 +1,13 @@
+<div *ngIf="person">
+
+	<h2>Client details: {{ person.name | uppercase }} {{ person.surname | uppercase }}</h2>
+
+	<div class="panel panel-default">
+	<strong>Name:</strong> {{person.name}}<br>
+	<strong>Surname:</strong> {{person.surname}}<br>
+	<strong>City:</strong> {{person.city}}
+	</div>
+	
+	<p><a (click)="goBack()">Back to list</a></p>
+	
+</div>

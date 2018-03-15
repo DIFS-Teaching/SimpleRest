@@ -15,7 +15,7 @@
 	</thead>
 	<tbody>
 		<tr *ngFor="let client of people">
-			<td><a href="#">{{client.id}}</a></td>
+			<td><a routerLink="/detail/{{client.id}}">{{client.id}}</a></td>
 			<td>{{client.name}}</td>
 			<td>{{client.surname}}</td>
 			<td>{{client.city}}</td>

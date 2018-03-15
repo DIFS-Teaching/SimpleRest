@@ -6,16 +6,20 @@ import { AppComponent } from './app.component';
 import { PeopleComponent } from './people/people.component';
 import { PersonService } from './person.service';
 import { HttpClientModule } from '@angular/common/http';
+import { PersonDetailComponent } from './person-detail/person-detail.component';
+import { AppRoutingModule } from './/app-routing.module';
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    PeopleComponent
+    PeopleComponent,
+    PersonDetailComponent
   ],
   imports: [
     BrowserModule,
-    HttpClientModule
+    HttpClientModule,
+    AppRoutingModule
   ],
   providers: [
     PersonService
