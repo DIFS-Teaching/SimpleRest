@@ -112,8 +112,8 @@ function saveRecord($filename, $record)
 
 //allow access from any client (public API)
 header('Access-Control-Allow-Origin: *');
-header('Access-Control-Allow-Methods: POST, GET');
-header('Access-Control-Allow-Headers: origin, x-csrftoken, content-type, accept');
+header('Access-Control-Allow-Methods: GET, PUT, POST, OPTIONS');
+header('Access-Control-Allow-Headers: origin, x-csrftoken, content-type, accept, x-requested-with');
 		
 //get the HTTP method, path and body of the request
 $method = $_SERVER['REQUEST_METHOD'];
@@ -134,17 +134,20 @@ switch ($method) {
 			$data = loadAll($csv);
 		break;
 	case 'PUT':
+	    $data = '';
 		break;
 	case 'POST':
 		$input = json_decode(file_get_contents('php://input'), true);
 		$data = saveRecord($csv, $input);
 		break;
 	case 'DELETE':
-		break;
+	case 'OPTIONS':
+	    $data = '';
+	    break;
 }
 
 //die if the operation failed (probably not found)
-if (!$data) {
+if ($data === null) {
 	http_response_code(404);
 	die();
 }
