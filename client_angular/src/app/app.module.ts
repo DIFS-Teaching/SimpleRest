@@ -9,13 +9,15 @@ import { HttpClientModule } from '@angular/common/http';
 import { PersonDetailComponent } from './person-detail/person-detail.component';
 import { AppRoutingModule } from './/app-routing.module';
 import { FormsModule } from '@angular/forms';
+import { PersonNewComponent } from './person-new/person-new.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     PeopleComponent,
-    PersonDetailComponent
+    PersonDetailComponent,
+    PersonNewComponent
   ],
   imports: [
     BrowserModule,

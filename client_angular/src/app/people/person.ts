@@ -3,4 +3,11 @@ export class Person {
   name: string;
   surname: string;
   city: string;
+
+  constructor() {
+    this.name = '';
+    this.surname = '';
+    this.city = '';
+  }
+
 }
