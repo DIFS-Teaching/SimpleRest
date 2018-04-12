@@ -27,4 +27,4 @@ A simple client written in jQuery.
 A simple client written in [Angular.js](https://angularjs.org/)
 
 ### Angular Client
-A simple client writtent in [Angular](https://angular.io/)
+A simple client writtent in [Angular](https://angular.io/). See the [README inside](https://github.com/DIFS-Teaching/SimpleRest/tree/master/client_angular) for instructions.
