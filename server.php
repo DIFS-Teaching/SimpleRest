@@ -45,7 +45,7 @@ function loadAll($filename)
 /**
  * Loads a single record from a CSV file.
  * @param String $filename
- * @param unknown $key
+ * @param String $key
  * @return stdClass[]|NULL
  */
 function loadRecord($filename, $key)
@@ -78,8 +78,8 @@ function loadRecord($filename, $key)
 
 /**
  * Adds a new record to the CSV file
- * @param unknown $filename
- * @param unknown $record
+ * @param String $filename
+ * @param array $record
  * @return number|NULL
  */
 function saveRecord($filename, $record)
