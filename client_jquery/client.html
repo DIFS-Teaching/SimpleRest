@@ -24,7 +24,7 @@
 		function loadPeople(tab)
 		{
 		    jQuery.getJSON(
-				"/server.php/data",
+				"../server.php/data",
 			      function (data) {
 				  tab.empty();
 				  for (var i = 0; i < data.length; i++)
@@ -43,7 +43,7 @@
 		function addPerson(person)
 		{
 			$.ajax({
-			    url: '/server.php/data',
+			    url: '../server.php/data',
 			    type: 'POST',
 			    data: JSON.stringify(person),
 			    contentType: 'application/json; charset=utf-8',
